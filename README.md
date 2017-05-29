@@ -37,11 +37,16 @@ https://github.com/rg3/youtube-dl
 
 ##You can see below another option to download Youtube video or Youtube Videos by Mp3 format:##
 
-**Download by bideo format:**
+**Download by video format:**
 youtube-dl -cit "http://www.youtube.com/playlist?list=[*playlist_id*]"
+or
+youtube-dl -f best -citw -v <url-of-channel>
 
 **Download by Mp3:**
 youtube-dl --extract-audio --audio-format mp3 -cit "http://www.youtube.com/playlist?list=[*playlist_id*]"
+
+**Download playlist:**
+youtube-dl -t https://www.youtube.com/playlist?list=[*playlist_id*]
 
 
 ##About Youtube-dl update:##
@@ -50,3 +55,5 @@ Below you will be able to see few commands to maintain youtube-dl.s
 
     Get youtube-dl version: youtube-dl --version
     Update youtube-dl: sudo youtube-dl -U
+    OR
+    sudo pip install youtube-dl --upgrade
